@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Header - Navbar */
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 1.125rem;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #141414;
+  font-weight: 500;
+}
+.active {
+  color: #0065fe !important;
+}
+
+.menubar {
+  display: none;
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.btn-login {
+  color: #0065fe;
+  font-weight: 600;
+}
+
+.btn-try {
+  font-weight: 600;
+  padding: 12px 31.5px;
+  background-color: #0065fe;
+  color: white;
+  border-radius: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    padding-inline: 0.625rem;
+  }
+  .logo img {
+    width: 80%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .login-signup {
+    display: none;
+  }
+
+  .menubar {
+    display: block;
+  }
+}
+
+/* Main Sections */
+
+.hero {
+  max-width: 948px;
+  padding: 4rem 1.25rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 6rem;
+  font-weight: 700;
+  color: #141414;
+}
+
+.hero p {
+  max-width: 781px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #141414;
+  font-weight: 400;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-span {
+  position: relative;
+  color: #0065fe;
+}
+
+.hero-span svg {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media only screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .hero p {
+    font-size: 1.025;
+
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-block: 6rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-btns {
+    gap: 1.5rem;
+  }
+}
+
+/* Oval */
+
+.oval {
+  min-height: 12vh;
+  background-image: url("./assets/oval.png");
+  background-size: cover;
+  background-position: center;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+
+
+/* Stats sections */
+
+.stats-container {
+  padding: 3rem 1rem;
+  background-color: #f9fbfd;
+}
+
+.stats {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-main h3 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: #141414;
+  margin-bottom: 1.5rem;
+}
+
+.stats-main h3 span {
+  color: #0065fe;
+}
+
+.stats-possibilites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  color: #141414;
+}
+
+.possibilities {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 143px;
+}
+
+.possibilities h4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.possibilities p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .stats-main h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .stats-possibilites {
+    gap: 24px;
+  }
+
+  .possibilities {
+    width: 120px;
+  }
+
+  .possibilities h4 {
+    font-size: 1.8rem;
+  }
+
+  .possibilities p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .stats{
+        flex-direction: column;
+    }
+
+  .stats-main h3 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .stats-possibilites {
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+  }
+
+  .possibilities {
+    width: 100%;
+  }
+
+  .possibilities h4 {
+    font-size: 1.6rem;
+  }
+
+  .possibilities p {
+    font-size: 0.85rem;
+  }
+}

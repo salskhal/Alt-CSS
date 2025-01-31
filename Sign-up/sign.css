@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background-color: #f7fdfc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1240px;
+  margin: 0px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+align-items: center;
+  padding-inline: 20px;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-left h1 {
+  font-size: 2.5rem;
+}
+
+.container-left p {
+  color: #737373;
+  line-height: 25px;
+
+  max-width: 460px;
+}
+
+@media (max-width: 880px) {
+  body {
+    align-items: start;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-block: 40px;
+    gap: 40px;
+  }
+}
+
+.form-container {
+  padding: 2.5rem;
+  background-color: white;
+  box-shadow: 10px 10px 37px 0px rgba(4, 8, 19, 0.27);
+  -webkit-box-shadow: 10px 10px 37px 0px rgba(4, 8, 19, 0.27);
+  -moz-box-shadow: 10px 10px 37px 0px rgba(4, 8, 19, 0.27);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  font-size: 14px;
+  background: white;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2EC4B6 ;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.terms {
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.terms a {
+  color: #2EC4B6;
+  text-decoration: underline;
+}
+

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", system-ui, sans-serif;
+}
+
+body {
+  background-color: #f5f8fa;
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center; */
+}
+
+nav {
+  padding: 30px 10px;
+  max-width: 1360px;
+  margin: 0 auto;
+  border-bottom: 2px solid #e0e6ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1d2c3c;
+}
+
+.acc-btn {
+  font-weight: 600;
+  font-size: 14px;
+  border: 3px solid #646e7a;
+  background: none;
+  border-radius: 6px;
+  padding: 12px 19px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 892px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-block: 40px;
+}
+
+.form-container {
+  /* padding: 3rem; */
+  background: #ffffff;
+}
+
+.form-header {
+  padding: 3rem;
+  border-bottom: 2px solid #f5f7fa;
+}
+
+.form-header h2 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #1d2c3c;
+}
+
+.basic-info {
+  padding: 3rem;
+  border-bottom: 2px solid #f5f7fa;
+}
+
+.freelancer {
+  padding: 3rem;
+  background-color: #1179bf;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-header span {
+  padding: 5px 10px;
+  border: 2px solid #548bc5;
+  color: #548bc5;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.info-header p {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  background: #f3f4f6;
+}
+
+.card-container {
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 600px;
+}
+
+.card-container h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.input-row {
+  display: flex;
+  gap: 12px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.card-input {
+  flex: 4;
+}
+
+.expiry-input {
+  flex: 1;
+}
+
+.cvc-input {
+  flex: 1;
+}
+
+.input-row input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 8px 4px;
+  font-size: 14px;
+  color: #111827;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+input:focus {
+  outline: none;
+}
+
+.buy-btn {
+  width: 100%;
+  border: none;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: #038e7d;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.terms {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #636b6f;
+}

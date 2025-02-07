@@ -18,7 +18,7 @@ body {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-align-items: center;
+  align-items: center;
   padding-inline: 20px;
 }
 
@@ -100,6 +100,8 @@ select {
   background: white;
 }
 
+
+
 .password-input {
   position: relative;
 }
@@ -118,7 +120,7 @@ select {
 .submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: #2EC4B6 ;
+  background-color: #2ec4b6;
   color: white;
   border: none;
   border-radius: 2px;
@@ -137,7 +139,6 @@ select {
 }
 
 .terms a {
-  color: #2EC4B6;
+  color: #2ec4b6;
   text-decoration: underline;
 }
-

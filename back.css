@@ -1,41 +1,6 @@
-/* .back-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #555;
-}
-
-
-
-.back-button2{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-} */
-
-
-
+/* This places the button at the top right */
 .back-button {
-    position: fixed;  /* Changed from absolute to fixed */
+    position: fixed;  
     top: 20px;
     right: 20px;
     padding: 10px 20px;
@@ -52,8 +17,11 @@
     background-color: #555;
 }
 
+
+
+/* This places the button at the buttom right */
 .back-button2 {
-    position: fixed;  /* Changed from absolute to fixed */
+    position: fixed;  
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
@@ -65,3 +33,9 @@
     font-size: 14px;
     transition: background-color 0.3s ease;
 }
+.back-button2:hover {
+    background-color: #555;
+}
+
+
+/* Salman-Yusuf Khalid */

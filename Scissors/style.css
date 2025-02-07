@@ -194,8 +194,6 @@ nav {
   margin: 0 auto;
 }
 
-
-
 /* Stats sections */
 
 .stats-container {
@@ -271,9 +269,9 @@ nav {
 }
 
 @media only screen and (max-width: 480px) {
-    .stats{
-        flex-direction: column;
-    }
+  .stats {
+    flex-direction: column;
+  }
 
   .stats-main h3 {
     font-size: 1.8rem;
@@ -298,3 +296,263 @@ nav {
     font-size: 0.85rem;
   }
 }
+
+/* Why us section  */
+.why {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 8rem 1.25rem;
+}
+
+.why {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .why {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 1.25rem;
+  }
+
+  .why-right {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+.why-left h2 {
+  position: relative;
+  font-size: 2.5rem;
+  color: #141414;
+}
+
+.why-left h2 span {
+  color: #005ae2;
+}
+.why-left h2::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 40px;
+  left: -15px;
+  top: 10px;
+  background: linear-gradient(to bottom, #112232, #4d6b8800);
+}
+
+.why-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4rem;
+  column-gap: 2rem;
+}
+
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.grid-item-icon {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #3284ff21;
+  width: fit-content;
+}
+
+.grid-item-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.grid-item-content {
+  color: #141414;
+}
+
+.grid-item-content h3 {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.grid-item-content p {
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+  .why {
+    padding: 2rem 1rem; 
+  }
+
+  .why-left h2 {
+    font-size: 2rem; 
+  }
+  .why-right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-item-content h3 {
+    font-size: 1.5rem; 
+    line-height: 1.5rem;
+  }
+
+  .grid-item-content p {
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+  }
+}
+
+/* .why {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+  .why {
+    grid-template-columns: 1fr;
+    gap: 3rem; 
+    padding: 3rem 1.25rem;
+  }
+
+  .why-right {
+    grid-template-columns: repeat(1, 1fr); 
+    row-gap: 2rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    padding: 2rem 1rem; 
+  }
+
+  .why-left h2 {
+    font-size: 2rem; 
+  }
+
+  .why-left h2::before {
+    height: 30px; 
+    top: 8px; 
+  }
+
+  .grid-item-content h3 {
+    font-size: 1.5rem; 
+    line-height: 1.5rem;
+  }
+
+  .grid-item-content p {
+    font-size: 0.9rem; 
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-left h2 {
+    font-size: 1.75rem; 
+  }
+
+  .why-left h2::before {
+    height: 25px; 
+    top: 6px; 
+  }
+
+  .grid-item {
+    gap: 1.5rem; 
+  }
+
+  .grid-item-icon {
+    padding: 8px; 
+  }
+
+  .grid-item-icon img {
+    width: 18px; 
+    height: 18px;
+  }
+
+  .grid-item-content h3 {
+    font-size: 1.25rem; 
+    line-height: 1.25rem;
+  }
+
+  .grid-item-content p {
+    font-size: 0.85rem; 
+    line-height: 1.25rem;
+  }
+}
+
+
+.why-left h2 {
+  position: relative;
+  font-size: 2.5rem;
+  color: #141414;
+}
+
+.why-left h2 span {
+  color: #005ae2;
+}
+
+.why-left h2::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 40px;
+  left: -15px;
+  top: 10px;
+  background: linear-gradient(to bottom, #112232, #4d6b8800);
+}
+
+.why-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4rem;
+  column-gap: 2rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.grid-item-icon {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #3284ff21;
+  width: fit-content;
+}
+
+.grid-item-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.grid-item-content {
+  color: #141414;
+}
+
+.grid-item-content h3 {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.grid-item-content p {
+  line-height: 1.75rem;
+  font-weight: 400;
+} */
